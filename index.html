@@ -510,6 +510,11 @@
       .date-row { grid-template-columns: 1fr; }
       .monthday-row { grid-template-columns: 1fr; }
     }
+
+    /* iOS Safariのズーム防止：入力欄は16px以上必須 */
+    input[type="text"], input[type="date"], select {
+      font-size: 16px !important;
+    }
   </style>
 </head>
 <body>
